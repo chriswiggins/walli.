@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>walli.</title>
+    <script type = "text/javascript">
+        var output;
+        var txtInput;
+        var input;
+        var inputa;
+        var base;
+        var basenumber;
+function init() {
+    //get everything together
+    var output = document.getElementById("output");
+    var basenumber = document.getElementById("basenumber");
+    smartremark();
+    basenumber.style.display = "none";
+}
+function binarygo() {
+            var txtInput = document.getElementById("txtInput");
+            var output = document.getElementById("output");
+            var input = txtInput.value;
+            var inputa = parseInt(input);
+            decOutput = (inputa).toString(2);
+            output.innerHTML = decOutput;
+            base = "2";
+            var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+        }
+function hexgo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input2 = txtInput.value;
+    var inputa2 = parseInt(input2)
+    decOutput2 = (inputa2).toString(16);
+    output.innerHTML = decOutput2;
+    base = "16";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function octalgo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input3 = txtInput.value;
+    var inputa3 = parseInt(input3);
+    decOutput3 = (inputa3).toString(8);
+    output.innerHTML = decOutput3;
+    base = "8";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function ternarygo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input4 = txtInput.value;
+    var inputa4 = parseInt(input4)
+    decOutput4 = (inputa4).toString(3);
+    output.innerHTML = decOutput4;
+    base = "3";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function quaternarygo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input5 = txtInput.value;
+    var inputa5 = parseInt(input5)
+    decOutput5 = (inputa5).toString(4);
+    output.innerHTML = decOutput5;
+    base = "4";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function quinarygo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input6 = txtInput.value;
+    var inputa6 = parseInt(input6)
+    decOutput6 = (inputa6).toString(5);
+    output.innerHTML = decOutput6;
+    base = "5";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function senarygo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input7 = txtInput.value;
+    var inputa7 = parseInt(input7)
+    decOutput7 = (inputa7).toString(6);
+    output.innerHTML = decOutput7;
+    base = "6";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function undecimalgo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input8 = txtInput.value;
+    var inputa8 = parseInt(input8)
+    decOutput8 = (inputa8).toString(11);
+    output.innerHTML = decOutput8;
+    base = "11";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function duodecimalgo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input12 = txtInput.value;
+    var inputa12 = parseInt(input12)
+    decOutput12 = (inputa12).toString(12);
+    output.innerHTML = decOutput12;
+    base = "12";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function tridecimalgo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input13 = txtInput.value;
+    var inputa13 = parseInt(input13)
+    decOutput13 = (inputa13).toString(13);
+    output.innerHTML = decOutput13;
+    base = "13";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function tetradecimalgo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input14 = txtInput.value;
+    var inputa14 = parseInt(input14)
+    decOutput14 = (inputa14).toString(14);
+    output.innerHTML = decOutput14;
+    base = "14";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function pentadecimalgo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input15 = txtInput.value;
+    var inputa15 = parseInt(input15)
+    decOutput15 = (inputa15).toString(15);
+    output.innerHTML = decOutput15;
+    base = "15";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function vigesimalgo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input20 = txtInput.value;
+    var inputa20 = parseInt(input20)
+    decOutput20 = (inputa20).toString(20);
+    output.innerHTML = decOutput20;
+    base = "20";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function tetravigesimalgo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input24 = txtInput.value;
+    var inputa24 = parseInt(input24)
+    decOutput24 = (inputa24).toString(24);
+    output.innerHTML = decOutput24;
+    base = "24";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function heptavigesimalgo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input27 = txtInput.value;
+    var inputa27 = parseInt(input27)
+    decOutput27 = (inputa27).toString(27);
+    output.innerHTML = decOutput27;
+    base = "27";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function trigesimalgo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input30 = txtInput.value;
+    var inputa30 = parseInt(input30)
+    decOutput30 = (inputa30).toString(30);
+    output.innerHTML = decOutput30;
+    base = "30";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function duotrigesimalgo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input32 = txtInput.value;
+    var inputa32 = parseInt(input32)
+    decOutput32 = (inputa32).toString(32);
+    output.innerHTML = decOutput32;
+    base = "32";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function hexatrigesimalgo() {
+    var output = document.getElementById("output");
+    var txtInput = document.getElementById("txtInput");
+    var input36 = txtInput.value;
+    var inputa36 = parseInt(input36)
+    decOutput36 = (inputa36).toString(36);
+    output.innerHTML = decOutput36;
+    base = "36";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function asciigo() {
+    var txtInput = document.getElementById("txtInput");
+    var output = document.getElementById("output");
+    var inputASCII = txtInput.value;
+    var inputASCII2 = parseInt(inputASCII);
+    var c = String.fromCharCode(inputASCII2);
+    output.innerHTML = c;
+    base = "128";
+    var basenumber = document.getElementById("basenumber");
+    basenumber.innerHTML = "Base: " + base;
+    basenumber.style.display = "block";
+    smartremark();
+}
+function smartremark() {
+    var smartremark = document.getElementById("smartremark");
+    var random = Math.random();
+    var random3 = random * 12;
+    var random2 = Math.round(random3);
+    
+    if (random2 == 1) {
+        smartremark.innerHTML = "<h5>wally says hi |</h5>";
+    }
+    else if (random2 == 2) {
+        smartremark.innerHTML = "<h5>NEWS: walli ate my car. please send help |</h5>";
+    }
+    else if (random2 == 3) {
+        smartremark.innerHTML = "<h5>walli has a big belly, for a square... |</h5>";
+    }
+    else if (random2 == 4) {
+        smartremark.innerHTML = "<h5>walli is named after my dead pet rat, wally. |</h5>";
+    }
+    else if (random2 == 5) {
+        smartremark.innerHTML = "<h5>walli wants a hug. |</h5>";
+    }
+    else if (random2 == 6) {
+        smartremark.innerHTML = "<h5>are you even reading this? |</h5>";
+    }
+    else if (random2 == 7) {
+        smartremark.innerHTML = "<h5>walli is bored |</h5>";
+    }
+    else if (random2 == 8) {
+        smartremark.innerHTML = "<h5>walli is hungry |</h5>";
+    }
+    else if (random2 == 9) {
+        smartremark.innerHTML = "<h5>NEWS: walli ate my house. like, with a fork. |</h5>"
+    }
+    else if (random2 == 10) {
+        smartremark.innerHTML = "<h5>sometimes walli wonders why you read this stuff. |</h5>"
+    }
+    else if (random2 == 12) {
+        smartremark.innerHTML = "<h5>walli. is. HUGE. |</h5>"
+    }
+    else if (random2 == 11) {
+        smartremark.innerHTML = "<h5>walli has been elected for president. |</h5>"
+    }
+    else {
+        smartremark.innerHTML = "<h5>walli thinks you are friendly |</h5>";
+    }
+}
+    </script>
+    <link rel = "stylesheet"
+          type = "text/css"
+          href = "walliconvert.css" />
+</head>
+
+<body onload = "init()">
+    <div id = "bottominfo">
+    <h5>programmed by blake bain. |</h5>
+    <a href = "http://steamcommunity.com/id/blakebain1/">steam account</a>
+    <h5>|</h5>
+    <a href = "http://youtube.com/channel/UC-yuk3-FNDEkkKIQ_a-LS-w">youtube channel</a>
+    <h5>|</h5>
+    <a href = "http://stackoverflow.com/users/4907682/nachozombie">stack overflow account</a>
+    <h5>|</h5>
+    <h5> WARNING: some ASCII letters may appear as a blank space. |</h5>
+    <div id = "smartremark"><h5></h5></div>
+    </div>
+    <div id = "title"><img src = "wallisquare.jpg" alt = "walli." style="width: 50px; height: 50px;">
+    <h1>walli.</h1>
+    </div>
+    <p>type in a number and press a button.</p>
+<form>
+    <fieldset>
+        <label for = "txtInput">number:</label>
+        <input type = "text"
+               id = "txtInput"/>
+        <button type = "button"
+                onclick = "binarygo()">
+            binary
+        </button>
+        <button type = "button"
+                onclick = "ternarygo()">
+            ternary
+        </button>
+        <button type = "button"
+                onclick = "quaternarygo()">
+            quaternary
+        </button>
+        <button type = "button"
+                onclick = "quinarygo()">
+            quinary
+        </button>
+        <button type = "button"
+                onclick = "senarygo()">
+            senary
+        </button>
+        <button type = "button"
+                onclick = "octalgo()">
+            octal
+        </button>
+        <button type = "button"
+                onclick = "undecimalgo()">
+            undecimal
+        </button>
+        <button type = "button"
+                onclick = "duodecimalgo()">
+            duodecimal
+        </button>
+        <button type = "button"
+                onclick = "tridecimalgo()">
+            tridecimal
+        </button>
+        <button type = "button"
+                onclick = "tetradecimalgo()">
+            tetradecimal
+        </button>
+        <button type = "button"
+                onclick = "pentadecimalgo()">
+            pentadecimal
+        </button>
+        <button type = "button"
+                onclick = "hexgo()">
+            hexadecimal
+        </button>
+        <button type = "button"
+                onclick = "vigesimalgo()">
+            vigesimal
+        </button>
+        <button type = "button"
+                onclick = "tetravigesimalgo()">
+            tetravigesimal
+        </button>
+        <button type = "button"
+                onclick = "heptavigesimalgo()">
+            heptavigesimal
+        </button>
+        <button type = "button"
+                onclick = "trigesimalgo()">
+            trigesimal
+        </button>
+        <button type = "button"
+                onclick = "duotrigesimalgo()">
+            duotrigesimal
+        </button>
+        <button type = "button"
+                onclick = "hexatrigesimalgo()">
+            hexatrigesimal
+        </button>
+        <button type = "button"
+                onclick = "asciigo()">
+            ascii
+        </button>
+    <div id = "output"></div>
+    </fieldset>
+</form>
+<br />
+<div id = "basenumber"></div>
+</body>
+</html>
