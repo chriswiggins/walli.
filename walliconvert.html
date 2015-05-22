@@ -18,9 +18,35 @@ function init() {
     smartremark();
     basenumber.style.display = "none";
 }
+
+
+//This convertNumber function can convert any number from decimal to a different base, but you have to provide the basenumber when you call the function.
+//If you want to convert the number in the box to binary, you need to call convertNumber(2)
+//If you want to convert the number in the box to hexadecimal, you need to call convertNumber(16)
+//The same can be done for any base!
+function convertNumber(base){
+	//What we can do to make our code shorter (sometimes known as shorthand), we can couple lots of things together in one go!
+	//This next line is doing your previous steps all at once:
+	//var txtInput = document.getElementById("txtInput");
+	//var input = txtInput.value;
+	//var inputa = parseInt(input);
+	//See how we can do document.getElementById("txtInput").value? This is called chaining in javascript and what it does is gets the specific value a function returns.
+	//Finally, we can wrap that whole call inside the parseInt as it just makes it a little easier to see what is going on :-)
+	var input = parseInt( document.getElementById("txtInput").value );
+
+	var output = document.getElementById("output");
+	output.innerHTML = (input).toString(base); //What this line is doing is the same as you had below, except it uses the base input to the function!
+
+	var baseNumber = document.getElementById("basenumber");
+	baseNumber.innerHTML = "Base: " + base;
+	basenumber.style.display = "block";
+
+	smartremark();
+}
+
 function binarygo() {
             var txtInput = document.getElementById("txtInput");
-            var output = document.getElementById("output");
+            
             var input = txtInput.value;
             var inputa = parseInt(input);
             decOutput = (inputa).toString(2);
@@ -339,67 +365,67 @@ function smartremark() {
         <input type = "text"
                id = "txtInput"/>
         <button type = "button"
-                onclick = "binarygo()">
+                onclick = "convertNumber(2)">
             binary
         </button>
         <button type = "button"
-                onclick = "ternarygo()">
+                onclick = "convertNumber(3)">
             ternary
         </button>
         <button type = "button"
-                onclick = "quaternarygo()">
+                onclick = "convertNumber(4)">
             quaternary
         </button>
         <button type = "button"
-                onclick = "quinarygo()">
+                onclick = "convertNumber(5)">
             quinary
         </button>
         <button type = "button"
-                onclick = "senarygo()">
+                onclick = "convertNumber(6)">
             senary
         </button>
         <button type = "button"
-                onclick = "octalgo()">
+                onclick = "convertNumber(8)">
             octal
         </button>
         <button type = "button"
-                onclick = "undecimalgo()">
+                onclick = "convertNumber(11)">
             undecimal
         </button>
         <button type = "button"
-                onclick = "duodecimalgo()">
+                onclick = "convertNumber(12)">
             duodecimal
         </button>
         <button type = "button"
-                onclick = "tridecimalgo()">
+                onclick = "convertNumber(13)">
             tridecimal
         </button>
         <button type = "button"
-                onclick = "tetradecimalgo()">
+                onclick = "convertNumber(14)">
             tetradecimal
         </button>
         <button type = "button"
-                onclick = "pentadecimalgo()">
+                onclick = "convertNumber(15)">
             pentadecimal
         </button>
         <button type = "button"
-                onclick = "hexgo()">
+                onclick = "convertNumber(15)">
             hexadecimal
         </button>
         <button type = "button"
-                onclick = "vigesimalgo()">
+                onclick = "convertNumber(20)">
             vigesimal
         </button>
         <button type = "button"
-                onclick = "tetravigesimalgo()">
+                onclick = "convertNumber(24)">
             tetravigesimal
         </button>
         <button type = "button"
-                onclick = "heptavigesimalgo()">
+                onclick = "convertNumber(27)">
             heptavigesimal
         </button>
         <button type = "button"
-                onclick = "trigesimalgo()">
+                onclick = "convertNumber(30)">
             trigesimal
         </button>
         <button type = "button"
@@ -407,7 +433,7 @@ function smartremark() {
             duotrigesimal
         </button>
         <button type = "button"
-                onclick = "hexatrigesimalgo()">
+                onclick = "convertNumber(36)">
             hexatrigesimal
         </button>
         <button type = "button"
